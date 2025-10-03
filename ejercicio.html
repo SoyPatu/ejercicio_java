@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio simple DOM</title>
+</head>
+<body>
+<p id="miParrafo">Código PATUS en la tienda de Fortnite.</p>
+<button id="btnCambiar">Jatziri odia a Diegux</button>
+<script>
+  // Seleccionar el párrafo usando su id
+  const parrafo = document.getElementById("miParrafo");
+
+  // Seleccionar el botón usando su id
+  const boton = document.getElementById("btnCambiar");
+
+  // Escuchar el evento click en el botón y cambiar el texto y estilo del párrafo
+  boton.addEventListener("click", function() {
+    parrafo.textContent = "Jatziri te cambio por otro Diegux";
+    parrafo.style.color = "red";
+  });
+</script>
+
+  </body>
+</html>
